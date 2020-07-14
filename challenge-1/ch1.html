@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge JavaScript1-J</title>
+    <style>
+html{
+    --font-size:10px;
+}
+        body{
+            font-family: 'Open Sans Condensed', sans-serif;
+           text-align: center;
+           margin: 5rem;
+        
+        }
+        h1{
+            font-size: calc(var(--font-size)*3);
+            color:green;
+            font-weight: bold;
+            place-self: center;
+        }
+        p{
+            font-size: calc(var(--font-size)*2.2);
+        }
+        input{
+            border-radius: 10rem;
+            border-color: rgb(51, 128, 0);
+            border-width:0.5rem;
+            min-height: calc(var(--font-size)+10%);
+            font-size:1.7rem;   
+            width: auto;
+        }
+        button{
+            border-radius: 10rem;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: calc(var(--font-size)*1.7);
+            font-weight: bold;
+            padding: 0.5rem;
+            background-color:greenyellow;
+        }
+        #showResult{
+            margin:3rem;
+            border:greenyellow;
+            border-radius:10rem;
+            border-width: 1rem;
+            font-size: 1.7rem;
+            animation:fadeIn ease 1.5s;
+            -webkit-animation: fadeIn ease 1.5s;
+
+        }
+        @keyframes fadeIn{
+            0%{opacity: 0%}
+            100%{opacity:100%}
+        }
+    </style>
+</head>
+<body>
+    <h1>Challenge 1: Add the Digits in a Number</h1>
+    <p>Write any number below and we will return the sum of its digits:</p>
+    <div>
+    <input type="text"></input>
+    <button>See sum result</button>
+</div>
+    <div id="result-area">
+        
+    </div>
+    <script src="ch1.js"></script>
+</body>
+</html>
